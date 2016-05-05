@@ -22,7 +22,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Guesswhat::Product.image("shoes")           #=> URL with a picture of a shoe
+Guesswhat::Product.image("bluepants")       #=> URL with a picture of a bluepants
+```
+
+
+###Guesswhat::Product.image(input)
+---------------
+***COMING SOON***
+
+```ruby
+Guesswhat::Product.image(input).size        #Specifiying the size of the image
+Guesswhat::Product.image(input).color       #Specifiying the color of the image
+Guesswhat::Product.image(input).type        #Specifiying the type of the image such as png, jpg, svg...
+Guesswhat::Product.image(input).limit       #Specifiying the number of images needed
+Guesswhat::Product.image(input).include     #Specifiying what item to include from the search
+Guesswhat::Product.image(input).exclude     #Specifiying what item to exclude from the search
+```
 
 ## Development
 
@@ -32,5 +49,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/guesswhat. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ThinkTankShark/guesswhat. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
