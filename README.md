@@ -1,8 +1,6 @@
 # Guesswhat
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/guesswhat`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Guesswhat is essentially a tool that allows you to get images from Google Image Search based on the item category you are passing in.
 
 ## Installation
 
