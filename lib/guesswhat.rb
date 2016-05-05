@@ -17,7 +17,7 @@ module Guesswhat
         image_url = nil
       end
 
-      puts image_url
+      return image_url
     end
   end
 end
