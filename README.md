@@ -35,7 +35,7 @@ Guesswhat::Product.image(input).size        #Specifiying the size of the image
 Guesswhat::Product.image(input).color       #Specifiying the color of the image
 Guesswhat::Product.image(input).type        #Specifiying the type of the image such as png, jpg, svg...
 Guesswhat::Product.image(input).limit       #Specifiying the number of images needed
-Guesswhat::Product.image(input).include     #Specifiying what item to include from the search
+Guesswhat::Product.image(input).have        #Specifiying what item to include from the search
 Guesswhat::Product.image(input).exclude     #Specifiying what item to exclude from the search
 ```
 
