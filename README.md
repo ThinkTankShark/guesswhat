@@ -21,13 +21,25 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-Guesswhat::Product.image("shoes")           #=> URL with a picture of a shoe
-Guesswhat::Product.image("bluepants")       #=> URL with a picture of a bluepants
+Guesswhat::Product.image                          #=> URL with a picture of a shoe by default
+Guesswhat::Product.image(item: "bluepants")       #=> URL with a picture of a blue pants
+Guesswhat::Product.image(size: "medium")          #=> URL with a picture of a shoe with medium size
+Guesswhat::Product.image(limit: 2)                #=> URL with 2 pictures of a shoe
+Guesswhat::Product.image(type: "png")             #=> URL with a picture of a shoe with png format
+Guesswhat::Product.image(color: "gray")           #=> URL with a picture of a grayscale shoe
 ```
+***Default Values***
+```ruby
+Guesswhat::Product.image                          #=> item: "Shoes", size: "xlarge", limit: 10, type: "png", color: "gray"
 
+Parameters to pass in:
+- 'size' returns images of a specified size, where size can be one of: icon, small, medium, large, xlarge, xxlarge, and huge. (string)
+- 'limit' Number of search results to return (integer)
+- 'type' Returns images of a specified type. Some of the allowed values are: bmp, gif, png, jpg, svg, pdf, ... (string)
+- 'color' Returns black and white, grayscale, or color images: mono, gray, and color. (string)
+```
+<!-- ###Guesswhat::Product.image(input)
 
-###Guesswhat::Product.image(input)
----------------
 ***COMING SOON***
 
 ```ruby
@@ -37,7 +49,7 @@ Guesswhat::Product.image(input).type        #Specifiying the type of the image s
 Guesswhat::Product.image(input).limit       #Specifiying the number of images needed
 Guesswhat::Product.image(input).have        #Specifiying what item to include from the search
 Guesswhat::Product.image(input).exclude     #Specifiying what item to exclude from the search
-```
+``` -->
 
 ## Development
 
