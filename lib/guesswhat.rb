@@ -19,7 +19,9 @@ module Guesswhat
       url = "https://www.googleapis.com/customsearch/v1?q=#{item}&cx=#{cx}&fileType=#{type}&filter=1&imgColorType=#{color}&imgSize=#{size}&num=#{limit}&key=#{key}"
       response = JSON.parse(RestClient.get url)
 
+      #Creating a random number to grab a random picture from the Google image JSON API
       rand_index = rand(1-10) + 1
+
       #Finding the first image from Google Images
       if response["items"][rand_index - 1]["link"] != nil
         image_url = response["items"][rand_index - 1]["link"]
