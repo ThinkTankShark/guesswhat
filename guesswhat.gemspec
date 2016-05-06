@@ -24,6 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.4'
   spec.add_development_dependency 'rest-client', '~> 1.8'
   spec.add_development_dependency 'nokogiri', '~> 1.6', '>= 1.6.7.2'
-  spec.add_development_dependency 'travis', '~> 1.8', '>= 1.8.2'
 
 end
