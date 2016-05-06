@@ -31,13 +31,13 @@ Guesswhat::Product.image(color: "gray")           #=> URL with a picture of a gr
 ***Default Values***
 ```ruby
 Guesswhat::Product.image                          #=> item: "Shoes", size: "xlarge", limit: 10, type: "png", color: "gray"
+```
 
 Parameters to pass in:
 - 'size' returns images of a specified size, where size can be one of: icon, small, medium, large, xlarge, xxlarge, and huge. (string)
 - 'limit' Number of search results to return (integer)
 - 'type' Returns images of a specified type. Some of the allowed values are: bmp, gif, png, jpg, svg, pdf, ... (string)
 - 'color' Returns black and white, grayscale, or color images: mono, gray, and color. (string)
-```
 <!-- ###Guesswhat::Product.image(input)
 
 ***COMING SOON***
