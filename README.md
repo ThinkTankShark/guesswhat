@@ -1,5 +1,7 @@
 # Guesswhat
 
+[![Gem Version](https://badge.fury.io/rb/guesswhat.svg)](https://badge.fury.io/rb/guesswhat)
+
 Guesswhat is essentially a tool that allows you to get images from Google Image Search based on the item category you are passing in.
 
 ## Installation
